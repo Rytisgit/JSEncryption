@@ -2,7 +2,7 @@
   var prime = 43
   var number = 14
 
-  var powaa = (number, pow) =>{
+  var fastPow = (number, pow) =>{
     if(pow == 0)return 1;
     if(pow == 1)return number
     var num = powaa(number, Math.floor(pow/2));
@@ -11,7 +11,7 @@
   }
 
 
-var powaaWithAnyMod = (number, pow, mod) =>{
+var powMod = (number, pow, mod) =>{
   var result = 1;
 	if (1 & pow)
 		result = number;
@@ -24,6 +24,6 @@ var powaaWithAnyMod = (number, pow, mod) =>{
 	return result;
 }
 
-console.log(studentNumber + "^" +prime + " mod " + prime+ "-"+ number +" = " + powaaWithAnyMod(studentNumber,prime,prime-number))
-console.log(studentNumber+"^"+studentNumber+" last digit in base "+number+" is: "+powaaWithAnyMod(studentNumber,studentNumber,100).toString(14)[0])
+console.log(studentNumber + "^" +prime + " mod " + prime+ "-"+ number +" = " + powMod(studentNumber,prime,prime-number))
+console.log(studentNumber+"^"+studentNumber+" last digit in base "+number+" is: "+powMod(studentNumber,studentNumber,100).toString(14)[0])
 

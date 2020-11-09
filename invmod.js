@@ -9,10 +9,10 @@
       temp = modulo, modulo = base % modulo, base = temp;
       temp = x0, x0 = x1 - quotient * x0, x1 = temp;
     }
-    if(base != 1)console.log("not coprime")
+    if(base != 1){console.log("not coprime"); return 0}
     else return x1 < 0 ? mod + x1 : x1;
   }
-
+console.log(InverseModulo(2,4))
 console.log(InverseModulo(37,190210129))  
 console.log(InverseModulo(base,studentNumber))
 
