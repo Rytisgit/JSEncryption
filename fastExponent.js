@@ -25,5 +25,5 @@ var powMod = (number, pow, mod) =>{
 }
 
 console.log(studentNumber + "^" +prime + " mod " + prime+ "-"+ number +" = " + powMod(studentNumber,prime,prime-number))
-console.log(studentNumber+"^"+studentNumber+" last digit in base "+number+" is: "+powMod(studentNumber,studentNumber,100).toString(14)[0])
+console.log(studentNumber+"^"+studentNumber+" last digit in base "+number+" is: "+powMod(studentNumber,studentNumber,14))
 
